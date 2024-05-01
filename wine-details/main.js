@@ -32,7 +32,7 @@ if (selectedWine) {
         class="wine__button wine__button--wishlist ${
           isWishListed ? "wine__button--wishlist-active" : ""
         }"
-        src="../assets/icons/heart.svg" 
+        src="./assets/icons/heart.svg" 
         onclick="addToWishList(${selectedWine.id});"
       >
       </div> 

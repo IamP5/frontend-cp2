@@ -21,7 +21,7 @@ WINES.slice(0,12).forEach((wine) => {
             role="button" 
             id="wishlist-icon" 
             class="wine__button wine__button--wishlist ${isWishListed ? 'wine__button--wishlist-active' : ''}"
-            src="../assets/icons/heart.svg" 
+            src="./assets/icons/heart.svg" 
             onclick="addToWishList(${wine.id})"
           >
         </div>
