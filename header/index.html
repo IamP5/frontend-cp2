@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="header__title">
+  <div class="header__title" onclick="setDynamicPage('home')">
     <img
       class="logo"
       src="./assets/icons/logo.svg"
@@ -9,16 +9,18 @@
   </div>
   <nav class="header__navigation">
     <ul class="list">
-      <li class="list__item">Catálogo</li>
-      <li class="list__item">Lista de desejo</li>
-      <li class="list__item">Contato</li>
-      <li class="list__item">
+      <li class="list__item" onclick="setDynamicPage('catalog')">Catálogo</li>
+      <li class="list__item" onclick="setDynamicPage('wishlist')">
+        Lista de desejo
+      </li>
+      <li class="list__item" onclick="setDynamicPage('contact')">Contato</li>
+      <li class="list__item" onclick="setDynamicPage('cart')">
         <img
-          width="40"
+          width="24"
           src="./assets/icons/cart.png"
           alt="Carrinho de compras"
         />
-        <span class="cart-price">R$0</span>
+        <span id="nav-cart-price" class="cart-price">R$0</span>
       </li>
     </ul>
   </nav>
