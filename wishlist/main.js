@@ -27,7 +27,7 @@ function loadWishList() {
               id="wishlist-icon" 
               class="wine__button wine__button--wishlist ${isWishListed ? 'wine__button--wishlist-active' : ''}"
               src="./assets/icons/heart.svg" 
-              onclick="addToWishList(${wine.id});"
+              onclick="addToWishList(${wine.id}); loadWishList();"
             >
           </div>
         </section>
