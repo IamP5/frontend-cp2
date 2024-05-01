@@ -1,0 +1,41 @@
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  background-color: #6d0d0d;
+  color: #f6f6f6;
+}
+
+.footer__logo {
+  width: 300px;
+}
+
+.footer__content {
+  display: flex;
+}
+
+.footer__content .list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 2rem;
+}
+
+.footer__content .list__item a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__content .list__item img {
+  width: 28px;
+}
+
+.footer__content .list:last-child {
+  border-left: 1px solid #f6f6f6;
+}
