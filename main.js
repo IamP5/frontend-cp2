@@ -91,6 +91,10 @@ async function setDynamicPage(page) {
     MAIN.appendChild(element);
   });
 
+  const style = document.createElement("style");
+  style.textContent = await fetch(`${page}/styles.css`).then(response => response.text());
+  MAIN.appendChild(style);
+
   const script = document.createElement("script");
   script.src = `${page}/main.js`;
   MAIN.appendChild(script);
